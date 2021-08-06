@@ -1,0 +1,22 @@
+title: "C# in Depth"
+author: "Igor Rončević"
+description: "This is a blog about C# topics I find fascinating. To name a few: inner workings of features, Roslyn internals, language design and evolution, performance, relation to other programming languages."
+keywords: "C#, Roslyn, IL, .NET Performance, Programming Languages"
+biography: "My name is Igor Rončević. I am the creator of <a href='https://github.com/sharpenrocks/sharpen'>Sharpen</a> and the maintainer of the <a href='https://github.com/ironcev/awesome-roslyn'>Awesome Roslyn</a> list. Here you can find my general <a href='https://thp.im'>programming blog</a> and my <a href='https://sessionize.com/ironcev'>public talks</a>."
+colophon: "© MMXXI by Igor Rončević.<br>Content available under <a href='https://creativecommons.org/licenses/by/4.0/'>Creative Commons CC BY 4.0 license</a> unless otherwise noted.<br>Made with ❤ using <a href='http://jekyllrb.com/'>Jekyll</a> and <a href='http://hugosereno.eu/'>Hugo Sereno Ferreira</a>'s beautiful <a href='https://github.com/hugoferreira/papyrus-theme'>Papyrus</a> theme."
+
+baseurl: ""
+url: "https://csharp.id"
+
+twitter_username: ironcev_
+github_username: ironcev
+linkedin_username: ironcev
+
+google-analytics: UA-69060-5
+
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+gems:
+- jekyll-sitemap

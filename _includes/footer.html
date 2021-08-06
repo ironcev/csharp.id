@@ -1,0 +1,19 @@
+<footer class="mb-3">
+  <div class="container">
+    <div class="row biography">
+      <div class="col-sm-6">
+        <h2>who am i</h2>
+        <p>{{ site.biography }}</p>
+      </div>
+      <div class="col-sm-6">
+        <h2>what is this</h2>
+        <p>{{ site.description }}</p>
+      </div>
+    </div>
+    {% if site.colophon %}
+    <div class="row copyright text-center">
+      <div class="col-sm-12">{{ site.colophon }}</div>
+    </div>
+    {% endif %}
+  </div>
+</footer>
