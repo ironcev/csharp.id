@@ -6,6 +6,8 @@ keywords: "C#, Roslyn, IL, .NET Performance, Programming Languages"
 biography: "My name is Igor Rončević. I am the creator of <a href='https://github.com/sharpenrocks/sharpen'>Sharpen</a> and the maintainer of <a href='https://github.com/ironcev/awesome-roslyn'>Awesome Roslyn</a>. People say my <a href='https://sessionize.com/ironcev'>public talks</a> on C# are entertaining, insightful, and valuable. I strive to achieve the same with my blog posts."
 colophon: "© MMXXI by Igor Rončević<br>Content available under <a href='https://creativecommons.org/licenses/by/4.0/'>Creative Commons CC BY 4.0 license</a> unless otherwise noted.<br>Made with ❤ using <a href='http://jekyllrb.com/'>Jekyll</a> and <a href='http://hugosereno.eu/'>Hugo Sereno Ferreira</a>'s beautiful <a href='https://github.com/hugoferreira/papyrus-theme'>Papyrus</a> theme."
 
+disqusShortname: csharpindepth
+
 permalink: /:title/
 
 baseurl: ""
