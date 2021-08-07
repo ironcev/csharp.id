@@ -11,6 +11,26 @@
   {% capture keywords %}{% if page.keywords %}{{ page.keywords }}{% elsif page.title %}{{""}}{% else %}{{ site.keywords }}{% endif %}{% endcapture %}
   <meta name="keywords" content="{{ keywords | strip_html | condense_spaces }}" />
 
+  {% if page.showSocialSharing %}
+  <meta name="twitter:card"               content="summary_large_image" />
+  <meta property="og:url"                 content="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
+  <meta property="og:type"                content="article" />
+  <meta property="og:title"               content="{{ page.title | strip_html }}" />
+  <meta property="og:description"         content="{{ page.subtitle | strip_html }}" />
+  <meta property="og:updated_time"        content="{{ page.lastUpdatedOn }}" />
+  <meta property="og:site_name"           content="C# in Depth" />
+  <meta property="article:published_time" content="{{ page.publishedOn }}" />
+  <meta property="article:modified_time"  content="{{ page.lastUpdatedOn }}" />
+  <meta property="article:author"         content="https://about.me/ironcev" />
+  {% if page.image %}
+  {% if page.image contains 'http:' or page.image contains 'https:' %}
+  <meta property="og:image"              content="{{ page.image }}" />
+  {% else %}
+  <meta property="og:image"              content="{{ site.url }}/resources{{ page.url | replace:'index.html','' }}{{ page.image }}" />
+  {% endif %}
+  {% endif %}
+  {% endif %}
+
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
   <span itemprop='author'><meta name="author" content="{{ site.author }}"><span itemprop='author'></span>
