@@ -9,10 +9,29 @@ layout: default
 
 <div class="row justify-content-center">
   <div class="col-md-8">
+    {% comment %}TODO-IG: Remove code duplication by creating a custom plugin in Ruby that will render only the posts of a single category.{% endcomment %}
     {% assign categories = site.categories | sort %}
     {% for category in categories %}
-      <h3 class="mt-4">{{ category | first }}</h3>
-      <p>{% for post in category[1] %}{{ forloop.index }}.&nbsp;<a class="mr-2" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} </a>{% endfor %}</p>
+      {% if category[0] == "C# 10.0" %}
+        <h3 class="mt-4">{{ category | first }}</h3>
+        <p>{% for post in category[1] %}{{ forloop.index }}.&nbsp;<a class="mr-2" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} </a>{% endfor %}</p>
+      {% endif %}
+    {% endfor %}
+
+    {% assign categories = site.categories | sort %}
+    {% for category in categories %}
+      {% if category[0] == "C# 9.0" %}
+        <h3 class="mt-4">{{ category | first }}</h3>
+        <p>{% for post in category[1] %}{{ forloop.index }}.&nbsp;<a class="mr-2" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} </a>{% endfor %}</p>
+      {% endif %}
+    {% endfor %}
+
+    {% assign categories = site.categories | sort %}
+    {% for category in categories %}
+      {% if category[0] == "C# 8.0" %}
+        <h3 class="mt-4">{{ category | first }}</h3>
+        <p>{% for post in category[1] %}{{ forloop.index }}.&nbsp;<a class="mr-2" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} </a>{% endfor %}</p>
+      {% endif %}
     {% endfor %}
   </div>
 </div>
