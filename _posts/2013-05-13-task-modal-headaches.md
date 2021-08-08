@@ -7,6 +7,7 @@ date: 2013-05-13 01:00
 publishedOn: "2013-05-13T12:00:00+01:00"
 lastUpdatedOn: "2017-04-16T12:00:00+01:00"
 category: C# 10.0
+showComments: false
 ---
 Test WPF application that I am working on right now mimics the behavior of Microsoft Word 2010 when it comes to windows handling. Mimic means both from implementation and end-user and perspective. From implementation perspective, **all application windows should run in the same process**. (Start several "instances" of Word and take a look at Windows Task Manager or [Process Explorer](http://technet.microsoft.com/en-US/sysinternals/bb896653). You will see that they all run within the same process.) From the end-user perspective, arbitrary number of independent top level application windows can be open. Still, the user knows that they "play together" and share certain features, like dialogs. **When the user opens a dialog in one of the application windows, all application windows get disabled**, not only the one that called the dialog.
 If you are not aware of this, try it on your own. Start several "instances" of Microsoft Word 2010 and open Save As dialog in one of it. You will not be able to select some other Word instance before you close the dialog. The same goes for message boxes.
