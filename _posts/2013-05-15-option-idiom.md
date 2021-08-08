@@ -10,7 +10,6 @@ disqusIdentifier: "Option Idiom | The Humble Programmer"
 category: C# 10.0
 showComments: false
 ---
-## The Billion Dollar Mistake
 >I call it my billion-dollar mistake. It was the invention of the null reference in 1965. At that time, I was designing the first comprehensive type system for references in an object oriented language (ALGOL W). My goal was to ensure that all use of references should be absolutely safe, with checking performed automatically by the compiler. But I couldn't resist the temptation to put in a null reference, simply because it was so easy to implement. This has led to innumerable errors, vulnerabilities, and system crashes, which have probably caused a billion dollars of pain and damage in the last forty years.<br/><br/>
 [Tony Hoare, QCon London 2009](http://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare)
 
@@ -28,6 +27,21 @@ By adopting null references, C# creators left us figuring out on our own if ther
 
 ### Holy Crusade
 The first approach that I took went into the direction of forcing the use of XML comments in code. It was a crusade whose goal was to **put the "Null is evil" comment on each and every property and method that could receive or return null**. The typical output of such a crusade looked like this:
+
+```csharp
+public class Test
+{
+  /// <summary>
+  /// Source directory. This property is never null.
+  /// </summary>
+  public DirectoryInfo SourceDirectory { get; private set; }
+  public int Property { get; set; }
+}
+```
+
+```csharp
+public unsafe partial ref readonly record struct Struct { }
+```
 
 <pre>
 <code>/// &lt;summary&gt;

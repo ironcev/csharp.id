@@ -10,7 +10,6 @@ disqusIdentifier: "Stack Trace Art | The Humble Programmer"
 category: C# 9.0
 showComments: false
 ---
-## In Its Essence
 Stack Trace Art is, in its essence, the art of throwing an exception that creates a beautiful drawing on the caller's stack trace. Before you dive deeper into its origins and the question of its purpose, enjoy first some of the exceptions being thrown and their drawings being drawn.
 
 ![Лулу и как се прави дъга Exception](/resources/stack-trace-art/lulu-i-kak-se-pravi-daga-exception-stack-trace-art.png)

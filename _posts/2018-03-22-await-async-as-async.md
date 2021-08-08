@@ -9,7 +9,6 @@ lastUpdatedOn: "2018-03-24T12:00:00+01:00"
 category: C# 9.0
 showComments: false
 ---
-## The Riddle
 Are you ready for a nice C# riddle? It's not an easy one ;-) so be sure to take a deep breath before jumping on it. Ready? Yes. Great! Take a good look at this line of code (thanks for [taking the photo](https://www.meetup.com/de-DE/NET-Stammtisch-Linz/events/247045584/) Georg!):
 
 ![Await async as async](/resources/await-async-as-async/await-async-as-async.jpg)

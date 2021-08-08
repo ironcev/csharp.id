@@ -9,7 +9,6 @@ lastUpdatedOn: "2017-04-16T12:00:00+01:00"
 category: C# 8.0
 showComments: false
 ---
-## The `Argument` Class
 The [`Argument`](https://github.com/ironcev/SwissKnife/blob/master/Source/SwissKnife/Diagnostics/Contracts/Argument.cs) class was one of the first types I added to [SwissKnife](https://github.com/ironcev/swissknife). It turns the following cumbersome-to-write code:
 
     void SomeMethod(string key, object value, string fileName)
