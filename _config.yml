@@ -50,3 +50,14 @@ defaults:
 # Plugins
 plugins:
 - jekyll-sitemap
+
+# Compress HTML
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
